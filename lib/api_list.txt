@@ -1,0 +1,71 @@
+http://170.170.1.170:82/coursehacker/api/main
+
+search , page, page_num : option parameter
+
+//login api
+{
+"method":"login"
+,"member_email":"admin@email.com"
+,"member_password":"123456789"
+,"iphone_device_id":"16f5bcc9c4c0999a97fbb4e57f7b14ae10aadcc4e8671f30eea907afe2fcbc7f"
+,"android_device_id":""
+,"latitude":"125.456"
+,"longitude":"42.564"
+
+}
+//sing api
+{
+"method":"register"
+,"member_email":"admin@email.com"
+,"member_name":"admin"
+,"member_password":"123456789"
+,"member_first_name":"admin fir"
+,"member_last_name":"admin last"
+,"iphone_device_id":"1234557887"
+,"android_device_id":""
+}
+// image upload api
+method:"upload_image"
+memberKey:"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s="
+image_name:"test.jpg"
+
+
+//set profile api
+{
+"method":"set_profile"
+,"memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s="
+,"member_first_name":"bbb"
+,"member_last_name":"aaa"
+,"member_sex":"Male"
+,"member_years":"32"
+,"member_image":"http://localhost/mobile_api_template/upload/2015_09_04_17_22_02_image_10.jpg"
+,"latitude":"128.3435"
+,"longitude":"42.457"
+,"phone":"123456789"
+,"country":"china"
+,"state":"Jilin"
+,"province":"Jilin"
+,"city":"yanji"
+,"address1":""
+,"address2":""
+,"postal_code":"133000"
+}
+//get member Info api
+{"method":"get_memberInfo","memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s=","member_id":1}
+//get member list api
+{"method":"get_member_list","memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s=","page":1,"page_num":10,"search_key":"member"}
+
+
+//get Friend  api
+   {"method":"get_friend","memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s="}
+//set Friend  api
+   {"method":"set_friend","memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s=","friend_member_id":5}
+//delete Friend  api
+   {"method":"del_friend","memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s=","friend_member_id":5}
+
+//send  msg  api
+   {"method":"send_msg","memberKey":"zfwezaWDu+S7A27CPCxO/xI4MnCWFhM=","target_member_id":5}
+
+
+//get content list api
+{"method":"get_content_list","memberKey":"zfwZ5tdXuTueuU7rNnJ0wxWu7Yo2F5s=","page":1,"page_num":10,"search_key":"member"}
